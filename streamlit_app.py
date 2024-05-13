@@ -5,6 +5,5 @@ st.title('RingkasID.')
 """
 Solusi Peringkas Artikel Cepat dan Akurat 
 """
-txt = st.text_area()
-
-st.write(f"You wrote {len(txt)} characters.")
+title = st.text_input("Copy Teks Disini", "")
+st.write("The current movie title is", title)
