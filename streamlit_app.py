@@ -4,6 +4,6 @@ import pandas as pd
 import streamlit as st
 
 """
-# Ringkas Pintar
+#Ringkas Pintar
 Peringkas artikel dan dokumen anda
 """
