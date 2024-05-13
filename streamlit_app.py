@@ -25,11 +25,3 @@ def main():
         if uploaded_file is not None:
             article_text = uploaded_file.getvalue().decode("utf-8")
 
- if st.button("Peringkas"):
-        if 'article_text' in locals():
-            summary = summarize_article(article_text)
-            st.subheader("Ringkasan Artikel:")
-            st.write(summary)
-        else:
-            st.warning("Mohon unggah file atau masukkan teks artikel terlebih dahulu.")
-
