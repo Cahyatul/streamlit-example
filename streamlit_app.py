@@ -4,6 +4,11 @@ import pandas as pd
 import streamlit as st
 from transformers import pipeline
 
+"""
+# Peringkas Artikel
+Ringkas Artikelmu Disini
+"""
+
 def summarize_article(article):
     summary = summarizer(article, max_length=150, min_length=30, do_sample=False)
     return summary[0]['summary_text']
