@@ -10,23 +10,3 @@ st.title('_Streamlit_ is :blue[cool] :sunglasses:')
 # Peringkas Artikel
 Ringkas Artikelmu Disini
 """
-
-def summarize_article(article):
-    summary = summarizer(article, max_length=150, min_length=30, do_sample=False)
-    return summary[0]['summary_text']
-
-def main():
-    st.title("Aplikasi Peringkas Artikel")
-
-    uploaded_file = st.file_uploader("Unggah artikel (format .txt)", type="txt")
-
-    if uploaded_file is not None:
-        article_text = uploaded_file.getvalue().decode("utf-8")
-        st.text("Artikel Asli:")
-        st.write(article_text)
-
-        if st.button("Peringkas"):
-            summary = summarize_article(article_text)
-            st.subheader("Ringkasan Artikel:")
-            st.write(summary)
-
