@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('RingkasID')
+st.title('RingkasID.')
 """
-Solusi Cepat untuk Peringkas Artikel
+Solusi Cepat untuk Peringkas Artikel Cepat dan Akurat 
 """
