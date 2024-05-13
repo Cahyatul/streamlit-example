@@ -6,6 +6,6 @@ st.title('RingkasID.')
 Solusi Peringkas Artikel Cepat dan Akurat 
 """
 
-txt = st.text_area, (
+txt = st.text_area(
     "")
 st.write(f"You wrote {len(txt)} characters.")
