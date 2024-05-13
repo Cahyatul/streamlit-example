@@ -5,4 +5,5 @@ import streamlit as st
 
 """
 # Ringkas Pintar
+Peringkas artikel dan dokumen anda
 """
