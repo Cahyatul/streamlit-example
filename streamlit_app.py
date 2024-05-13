@@ -4,8 +4,6 @@ import pandas as pd
 import streamlit as st
 from transformers import pipeline
 
-summarizer = pipeline("summarization")
-
 def summarize_article(article):
     summary = summarizer(article, max_length=150, min_length=30, do_sample=False)
     return summary[0]['summary_text']
@@ -25,5 +23,3 @@ def main():
             st.subheader("Ringkasan Artikel:")
             st.write(summary)
 
-if __name__ == "__main__":
-    main()
