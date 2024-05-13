@@ -1,3 +1,5 @@
+pip install transformers requests
+
 import streamlit as st
 from transformers import pipeline
 import requests
