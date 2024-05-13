@@ -9,4 +9,3 @@ Solusi Peringkas Artikel Cepat dan Akurat
 txt = st.text_area, (
     "")
 st.write(f"You wrote {len(txt)} characters.")
-st.form_submit_button(label="Submit")
