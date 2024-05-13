@@ -1,3 +1,4 @@
 altair
 pandas
-streamlit
+streamlit==1.10.0
+gensim==4.1.2
