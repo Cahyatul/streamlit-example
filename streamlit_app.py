@@ -5,7 +5,7 @@ st.title('RingkasID.')
 """
 Solusi Peringkas Artikel Cepat dan Akurat 
 """
-Copy Teks Disini
+
 txt = st.text_area(
     "")
 
