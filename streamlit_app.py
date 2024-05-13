@@ -1,10 +1,13 @@
 import streamlit as st
+from transformers import pipeline
+import request
 
 st.header('Selamat datang di Aplikasi Peringkas Artikel!', divider='rainbow')
 st.title('RingkasID.')
 """
 Solusi Peringkas Artikel Cepat dan Akurat 
 """
+summarizer = pipeline("summarization")
 def summarize_article(article):
     summary = summarizer(article, max_length=150, min_length=30, do_sample=False)
     return summary[0]['summary_text']
